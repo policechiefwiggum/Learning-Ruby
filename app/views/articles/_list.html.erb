@@ -1,0 +1,18 @@
+<table style="width:100%">
+        <tr>
+          <th id="headTitle">Title</th>
+          <th id="headText">Text</th>
+        </tr>
+       
+        <% @articles.each do |article| %>
+          <tr>
+            <td id="title"><%= article.title %></td>
+            <td id="text"><%= article.text %></td>
+            <td id="showLink"><%= link_to 'Show', article_path(article) %></td>
+            <td id="showLink"><%= link_to  "Edit", edit_article_path(article) %></td>
+            <td id="showLink"><%= link_to  "Delete", article_path(article), 
+                    method: :delete, 
+                    data: { confirm: 'Are you sure?' } %></td>
+          </tr>
+        <% end %>
+      </table>
