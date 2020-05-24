@@ -82,7 +82,7 @@ GEM
     puma (3.12.1)
     rack (2.0.7)
     rack-test (1.1.0)
-      rack (>= 1.0, < 3)
+      rack (2.0.7)
     rails (5.1.7)
       actioncable (= 5.1.7)
       actionmailer (= 5.1.7)
